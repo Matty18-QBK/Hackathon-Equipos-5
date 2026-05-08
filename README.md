@@ -11,6 +11,13 @@ npm run dev
 
 Abrir http://localhost:3000
 
+## Cuentas demo
+
+| Email                       | Contraseña         | Perfil                            |
+| --------------------------- | ------------------ | --------------------------------- |
+| `juan.perez@gmail.com`      | `Monotributo2026!` | Contribuyente (Juan Pérez)        |
+| `lopez@estudiolopez.com.ar` | `Contador$2026`    | Contador (Estudio López & Asoc.)  |
+
 ## Estructura
 
 - `app/login` y `app/register` — autenticación
