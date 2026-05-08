@@ -2,7 +2,8 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Sparkles, User, Briefcase } from "lucide-react";
+import { User, Briefcase } from "lucide-react";
+import { Logo } from "@/components/Logo";
 import { useRole, HOME_BY_ROLE, Role } from "@/lib/role";
 import clsx from "clsx";
 
@@ -20,9 +21,8 @@ export default function RegisterPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-6 bg-gradient-to-br from-slate-50 to-brand-50">
       <div className="w-full max-w-md">
-        <Link href="/" className="flex items-center gap-2 justify-center mb-6">
-          <div className="w-9 h-9 rounded-xl bg-brand-600 grid place-items-center text-white"><Sparkles className="w-5 h-5" /></div>
-          <span className="font-bold">ZenFiscal</span>
+        <Link href="/" className="flex items-center justify-center mb-6">
+          <Logo className="h-14 w-auto" width={200} height={120} priority />
         </Link>
 
         <div className="card p-8 space-y-5">

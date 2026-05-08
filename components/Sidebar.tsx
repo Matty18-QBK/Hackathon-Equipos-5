@@ -4,9 +4,10 @@ import { useRouter, usePathname } from "next/navigation";
 import { useRole } from "@/lib/role";
 import {
   LayoutDashboard, FileText, Receipt, Bell, Zap, Users, ShieldCheck,
-  CreditCard, Settings, Wallet, LogOut, Sparkles, Gauge,
+  CreditCard, Settings, Wallet, LogOut, Gauge,
 } from "lucide-react";
 import clsx from "clsx";
+import { Logo } from "@/components/Logo";
 
 const itemsContribuyente = [
   { href: "/dashboard",        label: "Dashboard",         icon: LayoutDashboard },
@@ -42,15 +43,10 @@ export default function Sidebar() {
 
   return (
     <aside className="w-64 shrink-0 bg-white border-r border-slate-200 flex flex-col h-screen sticky top-0">
-      <div className="px-5 py-5 flex items-center gap-2 border-b border-slate-200">
-        <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 grid place-items-center text-white shadow">
-          <Sparkles className="w-5 h-5" />
-        </div>
-        <div>
-          <div className="text-sm font-bold text-slate-900 leading-tight">ZenFiscal</div>
-          <div className="text-[11px] text-slate-500">
-            {role === "contador" ? "Modo Contador" : "Modo Contribuyente"}
-          </div>
+      <div className="px-5 py-4 flex flex-col items-start gap-1 border-b border-slate-200">
+        <Logo className="h-12 w-auto" width={160} height={96} priority />
+        <div className="text-[11px] text-slate-500 pl-1">
+          {role === "contador" ? "Modo Contador" : "Modo Contribuyente"}
         </div>
       </div>
 

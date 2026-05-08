@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useRole, HOME_BY_ROLE, Role } from "@/lib/role";
-import { Sparkles, ShieldCheck, AlertCircle } from "lucide-react";
+import { ShieldCheck, AlertCircle } from "lucide-react";
+import { Logo } from "@/components/Logo";
 
 type MockUser = {
   email: string;
@@ -55,10 +56,6 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
       <div className="hidden lg:flex relative overflow-hidden bg-gradient-to-br from-brand-700 via-brand-800 to-brand-900 text-white p-12 flex-col justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl bg-white/10 grid place-items-center"><Sparkles className="w-5 h-5" /></div>
-          <span className="font-bold text-lg">ZenFiscal</span>
-        </div>
         <div>
           <h1 className="text-4xl font-bold leading-tight mb-3">La inteligencia fiscal que ARCA no te da.</h1>
           <p className="text-brand-100 max-w-md">Anticipá la exclusión del Monotributo, automatizá tus facturas y respondé a tu DFE antes de que te penalicen.</p>
@@ -73,11 +70,8 @@ export default function LoginPage() {
 
       <div className="flex items-center justify-center p-8">
         <div className="w-full max-w-md space-y-6">
-          <div className="lg:hidden flex items-center gap-2 mb-6">
-            <div className="w-9 h-9 rounded-xl bg-brand-600 grid place-items-center text-white"><Sparkles className="w-5 h-5" /></div>
-            <span className="font-bold">ZenFiscal</span>
-          </div>
-          <div>
+          <div className="flex flex-col items-center text-center">
+            <Logo className="h-24 w-auto mb-3" width={240} height={144} priority />
             <h2 className="text-2xl font-bold">Iniciá sesión</h2>
             <p className="text-sm text-slate-500 mt-1">Ingresá con tu usuario y contraseña.</p>
           </div>
