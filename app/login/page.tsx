@@ -37,7 +37,7 @@ export default function LoginPage() {
       <div className="hidden lg:flex relative overflow-hidden bg-gradient-to-br from-brand-700 via-brand-800 to-brand-900 text-white p-12 flex-col justify-between">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-xl bg-white/10 grid place-items-center"><Sparkles className="w-5 h-5" /></div>
-          <span className="font-bold text-lg">ARCA Fiscal</span>
+          <span className="font-bold text-lg">ZenFiscal</span>
         </div>
         <div>
           <h1 className="text-4xl font-bold leading-tight mb-3">La inteligencia fiscal que ARCA no te da.</h1>
@@ -48,14 +48,14 @@ export default function LoginPage() {
             <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4" /> Multi-CUIT para contadores</li>
           </ul>
         </div>
-        <div className="text-xs text-brand-200">© 2026 ARCA Fiscal · Plataforma independiente</div>
+        <div className="text-xs text-brand-200">© 2026 ZenFiscal · Plataforma independiente</div>
       </div>
 
       <div className="flex items-center justify-center p-8">
         <div className="w-full max-w-md space-y-6">
           <div className="lg:hidden flex items-center gap-2 mb-6">
             <div className="w-9 h-9 rounded-xl bg-brand-600 grid place-items-center text-white"><Sparkles className="w-5 h-5" /></div>
-            <span className="font-bold">ARCA Fiscal</span>
+            <span className="font-bold">ZenFiscal</span>
           </div>
           <div>
             <h2 className="text-2xl font-bold">Elegí tu cuenta demo</h2>

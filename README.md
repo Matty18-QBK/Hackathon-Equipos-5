@@ -1,4 +1,4 @@
-# ARCA Fiscal — Plataforma Fiscal Inteligente
+# ZenFiscal — Plataforma Fiscal Inteligente
 
 Prototipo de alta fidelidad construido con **Next.js 15 (App Router)**, **Tailwind CSS**, **Recharts** y **Lucide React**.
 

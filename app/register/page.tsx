@@ -22,7 +22,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-md">
         <Link href="/" className="flex items-center gap-2 justify-center mb-6">
           <div className="w-9 h-9 rounded-xl bg-brand-600 grid place-items-center text-white"><Sparkles className="w-5 h-5" /></div>
-          <span className="font-bold">ARCA Fiscal</span>
+          <span className="font-bold">ZenFiscal</span>
         </Link>
 
         <div className="card p-8 space-y-5">
