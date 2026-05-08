@@ -43,11 +43,19 @@ export default function Sidebar() {
 
   return (
     <aside className="w-64 shrink-0 bg-white border-r border-slate-200 flex flex-col h-screen sticky top-0">
-      <div className="px-5 py-4 flex flex-col items-start gap-1 border-b border-slate-200">
-        <Logo className="h-12 w-auto" width={160} height={96} priority />
-        <div className="text-[11px] text-slate-500 pl-1">
+      <div className="px-4 py-5 flex flex-col items-center gap-2 border-b border-slate-200">
+        <Logo className="h-20 w-auto" width={240} height={160} priority />
+        <span
+          className={clsx(
+            "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold uppercase tracking-wider",
+            role === "contador"
+              ? "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200"
+              : "bg-brand-50 text-brand-700 ring-1 ring-brand-200"
+          )}
+        >
+          <span className={clsx("w-1.5 h-1.5 rounded-full", role === "contador" ? "bg-emerald-500" : "bg-brand-500")} />
           {role === "contador" ? "Modo Contador" : "Modo Contribuyente"}
-        </div>
+        </span>
       </div>
 
       <nav className="flex-1 overflow-y-auto px-3 py-3">
