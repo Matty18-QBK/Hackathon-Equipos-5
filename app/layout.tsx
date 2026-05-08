@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { RoleProvider } from "@/lib/role";
 
 export const metadata: Metadata = {
-  title: "ARCA Fiscal — Plataforma Fiscal Inteligente",
+  title: "ZenFiscal — Plataforma Fiscal Inteligente",
   description: "Gestioná tu relación con ARCA. Facturación, CCMA, alertas y automatizaciones.",
 };
 

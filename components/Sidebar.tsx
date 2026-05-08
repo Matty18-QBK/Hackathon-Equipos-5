@@ -47,7 +47,7 @@ export default function Sidebar() {
           <Sparkles className="w-5 h-5" />
         </div>
         <div>
-          <div className="text-sm font-bold text-slate-900 leading-tight">ARCA Fiscal</div>
+          <div className="text-sm font-bold text-slate-900 leading-tight">ZenFiscal</div>
           <div className="text-[11px] text-slate-500">
             {role === "contador" ? "Modo Contador" : "Modo Contribuyente"}
           </div>
